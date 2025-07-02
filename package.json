@@ -38,7 +38,7 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=your-project-token",
+    "chromatic": "npx chromatic --project-token=chpt_2a1456e7bbfee5c",
     "prepare": "husky install"
   },
   "dependencies": {
