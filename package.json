@@ -1,15 +1,43 @@
 {
   "name": "rs-ui",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/rs-ui.umd.js",
+  "module": "./dist/rs-ui.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rs-ui.es.js",
+      "require": "./dist/rs-ui.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "keywords": [
+    "react",
+    "design-system",
+    "components",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "Safidy Rambeloson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/safydy/rs-ui"
+  },
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=your-project-token",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
