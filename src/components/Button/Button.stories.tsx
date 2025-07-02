@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './Button';
 import { FiArrowRight, FiSend } from 'react-icons/fi';
+import '../../../src/index.css';
 
 const meta: Meta<typeof Button> = {
     title: 'Components/Button',
@@ -19,7 +20,7 @@ const meta: Meta<typeof Button> = {
         disabled: { control: 'boolean' },
         fullWidth: { control: 'boolean' },
     },
-};
+} as Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof Button>;
@@ -97,4 +98,4 @@ export const AllSizes: Story = {
             <Button size="xl">Extra Large</Button>
         </div>
     ),
-};
+} as Story;
