@@ -31,7 +31,7 @@
   "private": false,
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "clear && tsc -b && vite build",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
@@ -63,6 +63,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^24.0.10",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
