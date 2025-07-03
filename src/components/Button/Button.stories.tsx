@@ -53,6 +53,20 @@ export const Danger: Story = {
     },
 };
 
+export const Warning: Story = {
+    args: {
+        children: 'Warning Button',
+        variant: 'warning',
+    },
+};
+
+export const Info: Story = {
+    args: {
+        children: 'Info Button',
+        variant: 'info',
+    },
+};
+
 export const WithLeftIcon: Story = {
     args: {
         children: 'Send Message',
