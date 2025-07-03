@@ -32,8 +32,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ) => {
         const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg ' +
             'focus:ring-2 focus:outline-none cursor-pointer ' +
-            'transition-colors duration-200 ease-in-out ' +
-            'text-red-50';
+            'transition-colors duration-200 ease-in-out ';
 
         const variantStyles = {
             primary: 'bg-gray-200 hover:bg-gray-300 focus:ring-gray-100 text-gray-900',
