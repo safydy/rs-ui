@@ -1,43 +1,95 @@
 {
   "name": "rs-ui",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/rs-ui.umd.js",
+  "module": "./dist/rs-ui.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/rs-ui.es.js",
+      "require": "./dist/rs-ui.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "keywords": [
+    "react",
+    "design-system",
+    "components",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "Safidy Rambeloson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/safydy/rs-ui"
+  },
+  "private": false,
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_2a1456e7bbfee5c",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.7",
     "@eslint/js": "^9.29.0",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
     "@storybook/addon-links": "^8.6.14",
+    "@storybook/addon-onboarding": "^8.6.14",
     "@storybook/blocks": "^8.6.14",
+    "@storybook/experimental-addon-test": "^8.6.14",
     "@storybook/react": "^8.6.14",
     "@storybook/react-vite": "^8.6.14",
+    "@storybook/test": "^8.6.14",
+    "@tailwindcss/postcss": "^4.1.11",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
     "autoprefixer": "^10.4.21",
+    "chromatic": "^13.1.0",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-storybook": "^0.10.2",
     "globals": "^16.2.0",
     "jsdom": "^26.1.0",
+    "path": "^0.12.7",
+    "playwright": "^1.53.2",
     "postcss": "^8.5.6",
+    "storybook": "^8.6.14",
     "tailwindcss": "^4.1.11",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.34.1",
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
