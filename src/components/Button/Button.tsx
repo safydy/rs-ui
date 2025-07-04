@@ -35,12 +35,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             'transition-colors duration-200 ease-in-out ';
 
         const variantStyles = {
-            primary: 'bg-gray-200 hover:bg-gray-300 focus:ring-gray-100 text-gray-900',
-            secondary: 'bg-gray-600 hover:bg-gray-700 focus:ring-gray-300 text-white',
-            success: 'bg-green-600 hover:bg-green-700 focus:ring-green-300 text-white',
-            danger: 'bg-red-600 hover:bg-red-700 focus:ring-red-300 text-white',
-            warning: 'bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300 text-white',
-            info: 'bg-blue-600 hover:bg-blue-700 focus:ring-blue-300 text-white',
+            primary: 'bg-blue-500 hover:bg-blue-400 focus:ring-blue-200 text-white',
+            secondary: 'bg-gray-500 hover:bg-gray-400 focus:ring-gray-200 text-white',
+            success: 'bg-green-500 hover:bg-green-400 focus:ring-green-200 text-white',
+            danger: 'bg-red-500 hover:bg-red-400 focus:ring-red-200 text-white',
+            warning: 'bg-yellow-500 hover:bg-yellow-400 focus:ring-yellow-200 text-white',
+            info: 'bg-cyan-500 hover:bg-cyan-400 focus:ring-cyan-200 text-white',
         };
 
         const sizeStyles = {

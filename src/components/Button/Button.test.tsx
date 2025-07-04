@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi } from 'vitest';
 import { Button } from './Button';
-import {FiSend} from "react-icons/fi";
+import { FiSend } from 'react-icons/fi';
 
 describe('Button', () => {
     it('renders correctly', () => {
@@ -49,13 +49,11 @@ describe('Button', () => {
     });
 
     it('renders left icon', () => {
-        const { FiSend } = require('react-icons/fi');
         render(<Button leftIcon={<FiSend />}>Send</Button>);
         expect(screen.getByRole('button')).toContainElement(screen.getByTestId('icon-left'));
     })
 
     it('renders right icon', () => {
-        const { FiSend } = require('react-icons/fi');
         render(<Button rightIcon={<FiSend />}>Send</Button>);
         expect(screen.getByRole('button')).toContainElement(screen.getByTestId('icon-right'));
     })
