@@ -6,8 +6,8 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
 ## Components
  - [x] Button - Different variants, sizes, states
  - [x] Alert - Notifications with different severity levels
- - [ ] Badge - Small count and status indicators
- - [ ] Card - Container component with variants
+ - [x] Badge - Small count and status indicators
+ - [x] Card - Container component with variants
  - [ ] Avatar - User pictures with fallback initials
  - [ ] Dropdown - Menu component with positioning options
  - [ ] Modal - Dialog boxes with customizable headers/footers
