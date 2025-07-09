@@ -1,69 +1,31 @@
-# React + TypeScript + Vite
+## Rs-Ui
+Rs-Ui is a design	system for building user interfaces in React. 
+It provides a set of components that helps developers create consistent and visually appealing user interfaces quickly and efficiently.
+The purpose of the prototype is to demonstrate my proficiency in React and design principles, as well as to showcase my ability to create reusable components that can be easily integrated into any project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Components
+ - [x] Button - Different variants, sizes, states
+ - [x] Alert - Notifications with different severity levels
+ - [ ] Badge - Small count and status indicators
+ - [ ] Card - Container component with variants
+ - [ ] Avatar - User pictures with fallback initials
+ - [ ] Dropdown - Menu component with positioning options
+ - [ ] Modal - Dialog boxes with customizable headers/footers
+ - [ ] Form Components:
+		 - [ ] Input - Text entry with validation states
+		 - [ ] TextArea - Multi-line text input
+		 - [ ] Select - Dropdown selection
+		 - [ ] Checkbox - Boolean selection
+		 - [ ] Radio - Option selection
+ - [ ] Toggle/Switch - On/off controls
+ - [ ] Accordion - Collapsible content sections
+ - [ ] Tabs - Tabbed interface component
+ - [ ] Tooltip - Information on hover
+ - [ ] Toast/Notification - Temporary messages
+ - [ ] Progress Bar - Progress indicator
+ - [ ] Spinner/Loader - Loading states
+ - [ ] Pagination - Page navigation controls
+ - [ ] Breadcrumb - Navigation path indicator
+ - [ ] Table - Data display with sorting/filtering
+ - [ ] Sidebar/Navigation - Navigation component
+ - [ ] Slider/Range - Input for selecting values from a range
