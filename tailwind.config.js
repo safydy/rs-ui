@@ -50,6 +50,39 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
       },
+      animation: {
+        'progress-stripes': 'progress-stripes 1s linear infinite',
+        // Add new animations for the spinner component
+        'spin': 'spin 1s linear infinite',
+        'pulse': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-delay-1': 'bounce 1s infinite -0.32s',
+        'bounce-delay-2': 'bounce 1s infinite -0.16s',
+        'bounce-delay-3': 'bounce 1s infinite',
+      },
+      keyframes: {
+        'progress-stripes': {
+          '0%': { backgroundPosition: '1rem 0' },
+          '100%': { backgroundPosition: '0 0' },
+        },
+        // Ensure spin and bounce animations are defined
+        'spin': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'bounce': {
+          '0%, 100%': {
+            transform: 'translateY(-25%)',
+            animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+          },
+        },
+      },
+      borderWidth: {
+        '3': '3px',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
