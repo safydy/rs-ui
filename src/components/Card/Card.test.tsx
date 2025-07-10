@@ -23,16 +23,16 @@ describe('Card Component', () => {
         const { rerender } = render(<Card shadow="none">No Shadow</Card>);
         expect(screen.getByText('No Shadow').closest('div')).not.toHaveClass('shadow');
 
-        rerender(<Card shadow="md" data-testid="my-card1">Medium Shadow</Card>);
-        expect(screen.getByTestId('my-card1')).toHaveClass('shadow');
+        rerender(<Card shadow="md" variant="primary">Medium Shadow</Card>);
+        expect(screen.getByTestId('primary-card')).toHaveClass('shadow');
 
-        rerender(<Card shadow="lg" data-testid="my-card2">Large Shadow</Card>);
-        expect(screen.getByTestId('my-card2')).toHaveClass('shadow-lg');
+        rerender(<Card shadow="lg" variant="primary">Large Shadow</Card>);
+        expect(screen.getByTestId('primary-card')).toHaveClass('shadow-lg');
     });
 
     it('renders with border when bordered is true', () => {
-        render(<Card bordered>Bordered Card</Card>);
-        expect(screen.getByText('Bordered Card').closest('div')).toHaveClass('border');
+        render(<Card variant="primary" bordered>Bordered Card</Card>);
+        expect(screen.getByTestId('primary-card')).toHaveClass('border');
     });
 
     it('renders without border when bordered is false', () => {
@@ -65,13 +65,13 @@ describe('Card Component', () => {
     });
 
     it('applies horizontal layout when horizontal is true', () => {
-        render(<Card horizontal data-testid="my-card">Horizontal Card</Card>);
-        expect(screen.getByTestId('my-card')).toHaveClass('flex flex-row');
+        render(<Card horizontal variant="primary">Horizontal Card</Card>);
+        expect(screen.getByTestId('primary-card')).toHaveClass('flex flex-row');
     });
 
     it('applies interactive styles when interactive is true', () => {
-        render(<Card interactive data-testid="my-card">Interactive Card</Card>);
-        expect(screen.getByTestId('my-cad')).toHaveClass('cursor-pointer');
+        render(<Card interactive variant="primary">Interactive Card</Card>);
+        expect(screen.getByTestId('primary-card')).toHaveClass('cursor-pointer');
     });
 
     it('renders with title and subtitle', () => {
@@ -87,10 +87,10 @@ describe('Card Component', () => {
 
     it('renders with custom element type', () => {
         render(
-            <Card as="article" data-testid="article-card">
+            <Card as="article" variant="primary">
                 Article Card
             </Card>
         );
-        expect(screen.getByTestId('article-card').tagName).toBe('ARTICLE');
+        expect(screen.getByTestId('primary-card').tagName).toBe('ARTICLE');
     });
 });
