@@ -1,3 +1,7 @@
+## Demo
+See the	live demo of the Rs-Ui components [here](https://686580d531e99e660fb22e4a-cdbrzbkgbn.chromatic.com/?path=/story/components-avatar--combination-example).
+If the UI seems broken, please refresh the page, and wait about a couple of minutes for the assets to be considered (Unkown issue when using chromatic).
+
 ## Rs-Ui
 Rs-Ui is a design	system for building user interfaces in React. 
 It provides a set of components that helps developers create consistent and visually appealing user interfaces quickly and efficiently.
@@ -9,6 +13,7 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
  - [x] Badge - Small count and status indicators
  - [x] Card - Container component with variants
  - [x] Avatar - User pictures with fallback initials
+ - [x] Progress Bar - Progress indicator
  - [ ] Dropdown - Menu component with positioning options
  - [ ] Modal - Dialog boxes with customizable headers/footers
  - [ ] Form Components:
@@ -22,7 +27,6 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
  - [ ] Tabs - Tabbed interface component
  - [ ] Tooltip - Information on hover
  - [ ] Toast/Notification - Temporary messages
- - [ ] Progress Bar - Progress indicator
  - [ ] Spinner/Loader - Loading states
  - [ ] Pagination - Page navigation controls
  - [ ] Breadcrumb - Navigation path indicator
