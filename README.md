@@ -8,7 +8,7 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
  - [x] Alert - Notifications with different severity levels
  - [x] Badge - Small count and status indicators
  - [x] Card - Container component with variants
- - [ ] Avatar - User pictures with fallback initials
+ - [x] Avatar - User pictures with fallback initials
  - [ ] Dropdown - Menu component with positioning options
  - [ ] Modal - Dialog boxes with customizable headers/footers
  - [ ] Form Components:
