@@ -128,12 +128,12 @@ export const Modal: React.FC<ModalProps> = ({
 
     // Variant styles for the header
     const variantStyles: Record<ModalVariant, string> = {
-        primary: 'bg-blue-50 text-blue-800 dark:bg-blue-800 dark:text-blue-100',
-        secondary: 'bg-gray-50 text-gray-800 dark:bg-gray-800 dark:text-gray-100',
-        success: 'bg-green-50 text-green-800 dark:bg-green-800 dark:text-green-100',
-        danger: 'bg-red-50 text-red-800 dark:bg-red-800 dark:text-red-100',
-        warning: 'bg-yellow-50 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100',
-        info: 'bg-cyan-50 text-cyan-800 dark:bg-cyan-800 dark:text-cyan-100',
+        primary: 'bg-blue-50 text-blue-500 dark:bg-blue-500 dark:text-blue-100',
+        secondary: 'bg-gray-50 text-gray-500 dark:bg-gray-500 dark:text-gray-100',
+        success: 'bg-green-50 text-green-500 dark:bg-green-500 dark:text-green-100',
+        danger: 'bg-red-50 text-red-500 dark:bg-red-500 dark:text-red-100',
+        warning: 'bg-yellow-50 text-yellow-500 dark:bg-yellow-500 dark:text-yellow-100',
+        info: 'bg-cyan-50 text-cyan-500 dark:bg-cyan-500 dark:text-cyan-100',
     };
 
     // Handle clicks on the overlay
