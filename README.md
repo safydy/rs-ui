@@ -14,8 +14,9 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
  - [x] Card - Container component with variants
  - [x] Avatar - User pictures with fallback initials
  - [x] Progress Bar - Progress indicator
+ - [x] Accordion - Collapsible content sections
+ - [x] Modal - Dialog boxes with customizable headers/footers
  - [ ] Dropdown - Menu component with positioning options
- - [ ] Modal - Dialog boxes with customizable headers/footers
  - [ ] Form Components:
 		 - [ ] Input - Text entry with validation states
 		 - [ ] TextArea - Multi-line text input
@@ -23,7 +24,6 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
 		 - [ ] Checkbox - Boolean selection
 		 - [ ] Radio - Option selection
  - [ ] Toggle/Switch - On/off controls
- - [ ] Accordion - Collapsible content sections
  - [ ] Tabs - Tabbed interface component
  - [ ] Tooltip - Information on hover
  - [ ] Toast/Notification - Temporary messages
