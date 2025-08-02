@@ -14,6 +14,8 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
  - [x] Card - Container component with variants
  - [x] Avatar - User pictures with fallback initials
  - [x] Progress Bar - Progress indicator
+ - [x] Spinner/Loader - Loading states
+ - [x] Breadcrumb - Navigation path indicator
  - [x] Accordion - Collapsible content sections
  - [x] Modal - Dialog boxes with customizable headers/footers
  - [ ] Dropdown - Menu component with positioning options
@@ -27,9 +29,7 @@ The purpose of the prototype is to demonstrate my proficiency in React and desig
  - [ ] Tabs - Tabbed interface component
  - [ ] Tooltip - Information on hover
  - [ ] Toast/Notification - Temporary messages
- - [ ] Spinner/Loader - Loading states
  - [ ] Pagination - Page navigation controls
- - [ ] Breadcrumb - Navigation path indicator
  - [ ] Table - Data display with sorting/filtering
  - [ ] Sidebar/Navigation - Navigation component
  - [ ] Slider/Range - Input for selecting values from a range
