@@ -18,7 +18,7 @@ describe('Tabs Component', () => {
         expect(screen.getByText('Tab 1')).toBeInTheDocument();
         expect(screen.getByText('Tab 2')).toBeInTheDocument();
         expect(screen.getByText('Content 1')).toBeInTheDocument();
-        expect(screen.queryByText('Content 2')).not.toBeVisible();
+        expect(screen.getByText('Content 2').closest('div')).toHaveClass('hidden');
     });
 
     it('shows the first tab content by default', () => {
@@ -142,7 +142,7 @@ describe('Tabs Component', () => {
             </Tabs>
         );
 
-        const tab2Button = screen.getByText('Tab 2');
+        const tab2Button = screen.getByRole('tab', { name: 'Tab 2' });
         await userEvent.click(tab2Button);
 
         // Content should not change
@@ -217,7 +217,7 @@ describe('Tabs Component', () => {
             </Tabs>
         );
 
-        const tab1Button = screen.getByText('Tab 1');
+        const tab1Button = screen.getByRole('tab', { name: 'Tab 1' });
         console.log('Tab button classes:', tab1Button.className);
         expect(tab1Button).toHaveClass('flex-1');
     });
@@ -302,16 +302,16 @@ describe('Tabs Component', () => {
         const tabList = screen.getByRole('tablist');
         expect(tabList).toHaveAttribute('aria-orientation', 'horizontal');
 
-        const tab1Button = screen.getByText('Tab 1');
+        const tab1Button = screen.getByRole('tab', { name: 'Tab 1' });
         expect(tab1Button).toHaveAttribute('role', 'tab');
         expect(tab1Button).toHaveAttribute('id', 'tab-tab1');
         expect(tab1Button).toHaveAttribute('aria-controls', 'tabpanel-tab1');
         expect(tab1Button).toHaveAttribute('aria-selected', 'true');
 
-        const tab2Button = screen.getByText('Tab 2');
+        const tab2Button = screen.getByRole('tab', { name: 'Tab 2' });
         expect(tab2Button).toHaveAttribute('aria-selected', 'false');
 
-        const tabPanel = screen.getByRole('tabpanel');
+        const tabPanel = screen.getByRole('tabpanel', { name: 'Tab 1' });
         expect(tabPanel).toHaveAttribute('id', 'tabpanel-tab1');
         expect(tabPanel).toHaveAttribute('aria-labelledby', 'tab-tab1');
     });
