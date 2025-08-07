@@ -1,5 +1,5 @@
 ## Demo
-See the	live demo of the Rs-Ui components [here](https://686580d531e99e660fb22e4a-imfodakvmv.chromatic.com/?path=/story/components-progressbar--stages-example).
+See the	live demo of the Rs-Ui components [here](https://686580d531e99e660fb22e4a-ymmzmumbkk.chromatic.com/?path=/story/components-alert--all-variants).
 If the UI seems broken, please refresh the page, and wait about a couple of minutes for the assets to be considered (Unkown issue when using chromatic).
 
 ## Rs-Ui
